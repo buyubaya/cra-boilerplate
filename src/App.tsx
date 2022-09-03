@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 
 function test() {
-  console.log('22222 =>', 22222);
+  console.log('33333 =>', 33333);
 }
 
 function App() {
