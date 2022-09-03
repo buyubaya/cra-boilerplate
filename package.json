@@ -11,7 +11,7 @@
     "test:coverage": "jest",
     "lint:eslint": "eslint --fix \"./**/*.{js,jsx,ts,tsx}\"",
     "lint:tsc": "tsc --project ./tsconfig.lint.json --noEmit",
-    "lint": "yarn lint:eslint && yarn lint:tsc",
+    "lint": "npm run lint:eslint && npm run lint:tsc",
     "lint:staged": "lint-staged -c .lintstagedrc.cjs"
   },
   "eslintConfig": {
