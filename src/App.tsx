@@ -1,5 +1,6 @@
 import Test from '@/components/Test';
 import React from 'react';
+import './App.less';
 import './App.scss';
 
 function App() {
