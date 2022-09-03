@@ -1,4 +1,4 @@
 module.exports = {
-  '*.{js,jsx}': 'yarn lint:eslint',
-  '*.{ts,tsx}': () => 'yarn lint',
+  '*.{js,jsx}': 'npm run lint:eslint',
+  '*.{ts,tsx}': () => 'npm run lint',
 };
