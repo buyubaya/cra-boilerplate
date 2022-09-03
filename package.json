@@ -4,17 +4,17 @@
   "private": true,
   "scripts": {
     "prepare": "husky install",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "craco start",
+    "build": "craco build",
     "eject": "react-scripts eject",
     "test": "jest --watchAll",
     "test:coverage": "jest",
-    "lint:eslint": "eslint --fix \"./**/*.{js,jsx,ts,tsx}\" --max-warnings=0",
+    "lint:eslint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx}\" --max-warnings=-1",
     "lint:tsc": "tsc --project ./tsconfig.lint.json --noEmit",
     "lint": "npm run lint:eslint && npm run lint:tsc",
     "lint:staged": "lint-staged -c .lintstagedrc.cjs",
-    "prettier:check": "prettier -c **/*.ts **/*.tsx **/*.js",
-    "prettier:fix": "prettier --write **/*.ts **/*.tsx **/*.js"
+    "prettier:check": "prettier -c \"./src/**/*.{js,ts,tsx}\"",
+    "prettier:fix": "prettier --write \"./src/**/*.{js,ts,tsx}\""
   },
   "eslintConfig": {
     "extends": [
@@ -51,6 +51,7 @@
     "@types/node": "^16.11.56",
     "@types/react": "^18.0.18",
     "@types/react-dom": "^18.0.6",
+    "craco": "0.0.3",
     "eslint": "^8.21.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
