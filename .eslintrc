@@ -59,6 +59,8 @@
       }
     ],
     "react/jsx-boolean-value": "off",
+    "react/jsx-uses-react": 1,
+    "react/react-in-jsx-scope": "off",
     "no-empty-function": "off",
     "@typescript-eslint/no-empty-function": "off",
     "no-underscore-dangle": ["error", { "allowAfterThis": true, "enforceInMethodNames": true }]
