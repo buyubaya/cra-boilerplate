@@ -3,4 +3,4 @@ dist
 node_modules
 *.d.ts
 
-# *.config.js
+*.config.js
