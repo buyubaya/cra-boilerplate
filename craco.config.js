@@ -1,4 +1,5 @@
 const path = require('path');
+const CracoLessPlugin = require('craco-less');
 
 module.exports = {
   webpack: {
@@ -7,4 +8,17 @@ module.exports = {
       '@/redux': path.resolve(__dirname, 'src/redux'),
     },
   },
+  plugins: [
+    {
+      plugin: CracoLessPlugin,
+      options: {
+        lessLoaderOptions: {
+          lessOptions: {
+            // modifyVars: { '@primary-color': '#74e99c' },
+            javascriptEnabled: true,
+          },
+        },
+      },
+    },
+  ],
 };
